@@ -1,6 +1,6 @@
 # Configure the AWS Provider
 provider "aws" {
-  region = "us-east-1"
+  region = "ap-south-1"
 }
 
 # Define a resource block to create an AWS EC2 instance
@@ -10,7 +10,7 @@ resource "aws_instance" "web_server" {
   ami           = "ami-0261755bbcb8c4a84"
 
   # Specify the instance type (e.g., t2.micro, often in the free tier)
-  instance_type = "t2.micro"
+  instance_type = "t2.large"
 
   # Optional: Define tags for the instance
   tags = {
